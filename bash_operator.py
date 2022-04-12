@@ -19,6 +19,10 @@ with DAG(
         task_id='run_this_last',
     )
 
+    run_this_last1 = DummyOperator(
+        task_id='run_this_last1',
+    )
+
     # [START howto_operator_bash]
     run_this = BashOperator(
         task_id='run_after_loop',
